@@ -30,9 +30,9 @@
     </header>
 
     <main
-      class="grid min-h-screen grid-cols-4 grid-rows-2 bg-emerald-200 pt-4 pl-8"
+      class="grid min-h-screen grid-cols-4 grid-rows-2 gap-y-4 gap-x-12 bg-emerald-200 pt-4 pl-8"
     >
-      <form>
+      <form class="col-span-1">
         <legend>Search by User</legend>
 
         <div>
@@ -50,12 +50,19 @@
         </div>
       </form>
 
-      <section class="order-last">
+      <section class="order-last col-span-1">
         <h2>Search by Topic</h2>
         <div class="flex flex-col gap-y-3 p-4">
           <button type="button">JavaScript</button
           ><button type="button">HTML</button><button type="button">CSS</button>
         </div>
+      </section>
+
+      <section class="col-span-3" id="results">
+        <h2>
+          Showing Repositories for: <span id="repo-search-term"></span>
+          <ul></ul>
+        </h2>
       </section>
     </main>
 
