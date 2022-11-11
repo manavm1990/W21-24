@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./src/style.css" />
     <title>Git It Done!</title>
   </head>
-  <body>
+  <body class="bg-emerald-200">
     <header class="bg-orange-900 pt-16 pb-32 pl-16">
       <h1
         class="mb-4 flex max-w-max items-center gap-x-2 rounded bg-emerald-200 p-4 text-5xl font-black text-orange-900"
@@ -30,7 +30,7 @@
     </header>
 
     <main
-      class="grid min-h-screen grid-cols-4 grid-rows-2 gap-y-4 gap-x-12 bg-emerald-200 pt-4 pl-8"
+      class="mx-auto grid min-h-screen w-4/5 grid-cols-3 grid-rows-2 gap-y-6 gap-x-12 px-8 pt-6"
     >
       <form class="col-span-1">
         <legend>Search by User</legend>
@@ -58,11 +58,17 @@
         </div>
       </section>
 
-      <section class="col-span-3" id="results">
-        <h2>
-          Showing Repositories for: <span id="repo-search-term"></span>
-          <ul></ul>
-        </h2>
+      <section class="col-span-2 flex flex-col gap-y-4" id="results">
+        <h2>Showing Repositories for: <span id="repo-search-term"></span></h2>
+        <ul class="px-2">
+          <li>
+            <a
+              href="./single-repo.html?repo=manavm1990/6-27"
+              class="button my-2 block w-full"
+              >manavm1990/6-27</a
+            >
+          </li>
+        </ul>
       </section>
     </main>
 

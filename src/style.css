@@ -17,8 +17,10 @@
   section > div {
     @apply flex flex-col gap-y-3 p-4;
   }
+}
 
-  button[type] {
+@layer components {
+  .button {
     @apply w-full rounded bg-neutral-400 px-4 py-2 text-xl text-emerald-200;
   }
 }
