@@ -17,17 +17,48 @@
     <title>Git It Done!</title>
   </head>
   <body>
-    <header class="bg-amber-900 pt-16 pb-32 pl-16">
+    <header class="bg-orange-900 pt-16 pb-32 pl-16">
       <h1
-        class="mb-4 flex max-w-max items-center gap-x-2 rounded bg-emerald-500 p-4 text-5xl font-black text-amber-900"
+        class="mb-4 flex max-w-max items-center gap-x-2 rounded bg-emerald-200 p-4 text-5xl font-black text-orange-900"
       >
         <i class="fa-brands fa-github"></i>Git It Done!
       </h1>
-      <h2 class="text-xl text-emerald-500">
+      <h2 class="text-xl text-emerald-200">
         Search for a GitHub user or click on a language to see a list of
         repositories and how many open issues they have!
       </h2>
     </header>
+
+    <main
+      class="grid min-h-screen grid-cols-4 grid-rows-2 bg-emerald-200 pt-4 pl-8"
+    >
+      <form class="rounded border border-orange-900">
+        <legend
+          class="bg-orange-900 p-4 text-2xl font-bold uppercase text-emerald-200"
+        >
+          Search by User
+        </legend>
+
+        <div class="flex flex-col gap-y-3 p-4">
+          <label
+            for="username"
+            class="mb-1 block text-xl font-bold text-orange-900"
+            >Username</label
+          >
+          <input
+            type="text"
+            id="username"
+            class="block w-full rounded p-4 ring-2 ring-neutral-400"
+          />
+          <button
+            type="submit"
+            class="w-full rounded bg-neutral-400 px-4 py-2 text-xl text-emerald-200"
+          >
+            Get User
+          </button>
+        </div>
+      </form>
+    </main>
 
     <script type="module" src="./src/index.js"></script>
   </body>
