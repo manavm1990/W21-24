@@ -12,4 +12,13 @@
   section > *:first-child {
     @apply bg-orange-900 p-4 text-xl font-bold uppercase text-emerald-200;
   }
+
+  form > div,
+  section > div {
+    @apply flex flex-col gap-y-3 p-4;
+  }
+
+  button[type] {
+    @apply w-full rounded bg-neutral-400 px-4 py-2 text-xl text-emerald-200;
+  }
 }

@@ -35,7 +35,7 @@
       <form>
         <legend>Search by User</legend>
 
-        <div class="flex flex-col gap-y-3 p-4">
+        <div>
           <label
             for="username"
             class="mb-1 block text-xl font-bold text-orange-900"
@@ -46,14 +46,17 @@
             id="username"
             class="block w-full rounded p-4 ring-2 ring-neutral-400"
           />
-          <button
-            type="submit"
-            class="w-full rounded bg-neutral-400 px-4 py-2 text-xl text-emerald-200"
-          >
-            Get User
-          </button>
+          <button type="submit">Get User</button>
         </div>
       </form>
+
+      <section class="order-last">
+        <h2>Search by Topic</h2>
+        <div class="flex flex-col gap-y-3 p-4">
+          <button type="button">JavaScript</button
+          ><button type="button">HTML</button><button type="button">CSS</button>
+        </div>
+      </section>
     </main>
 
     <script type="module" src="./src/index.js"></script>
