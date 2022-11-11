@@ -3,6 +3,22 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+    @apply bg-emerald-200;
+  }
+
+  header {
+    @apply bg-orange-900 pt-16 pb-32 pl-16;
+  }
+
+  h1 {
+    @apply mb-4 flex max-w-max items-center gap-x-2 rounded bg-emerald-200 p-4 text-5xl font-black text-orange-900;
+  }
+
+  main {
+    @apply px-8 pt-6;
+  }
+
   form,
   section {
     @apply rounded border border-orange-900;
@@ -21,6 +37,6 @@
 
 @layer components {
   .button {
-    @apply w-full rounded bg-neutral-400 px-4 py-2 text-xl text-emerald-200;
+    @apply inline-block w-full rounded bg-neutral-400 px-4 py-2 text-xl text-emerald-200;
   }
 }

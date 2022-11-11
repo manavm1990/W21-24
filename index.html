@@ -16,13 +16,9 @@
     <link rel="stylesheet" href="./src/style.css" />
     <title>Git It Done!</title>
   </head>
-  <body class="bg-emerald-200">
-    <header class="bg-orange-900 pt-16 pb-32 pl-16">
-      <h1
-        class="mb-4 flex max-w-max items-center gap-x-2 rounded bg-emerald-200 p-4 text-5xl font-black text-orange-900"
-      >
-        <i class="fa-brands fa-github"></i>Git It Done!
-      </h1>
+  <body>
+    <header>
+      <h1><i class="fa-brands fa-github"></i>Git It Done!</h1>
       <h2 class="text-xl text-emerald-200">
         Search for a GitHub user or click on a language to see a list of
         repositories and how many open issues they have!
@@ -30,7 +26,7 @@
     </header>
 
     <main
-      class="mx-auto grid min-h-screen w-4/5 grid-cols-3 grid-rows-2 gap-y-6 gap-x-12 px-8 pt-6"
+      class="mx-auto grid min-h-screen w-4/5 grid-cols-3 grid-rows-2 gap-y-6 gap-x-12"
     >
       <form class="col-span-1">
         <legend>Search by User</legend>
@@ -64,7 +60,7 @@
           <li>
             <a
               href="./single-repo.html?repo=manavm1990/6-27"
-              class="button my-2 block w-full"
+              class="button my-2 inline-block w-full"
               >manavm1990/6-27</a
             >
           </li>
