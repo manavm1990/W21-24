@@ -2,18 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- TODO: Add favicon. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Must use 'all' to get the brands icons to work. :( -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="./src/style.css" />
-    <title>Vite ➕ Tailwind</title>
+    <title>Git It Done!</title>
   </head>
   <body>
-    <h1
-      class="text-center text-3xl font-semibold text-red-500 md:text-5xl"
-    >
-      Hello
-    </h1>
+    <header class="bg-amber-900 pt-16 pb-32 pl-16">
+      <h1
+        class="mb-4 flex max-w-max items-center gap-x-2 rounded bg-emerald-500 p-4 text-5xl font-black text-amber-900"
+      >
+        <i class="fa-brands fa-github"></i>Git It Done!
+      </h1>
+      <h2 class="text-xl text-emerald-500">
+        Search for a GitHub user or click on a language to see a list of
+        repositories and how many open issues they have!
+      </h2>
+    </header>
 
     <script type="module" src="./src/index.js"></script>
   </body>
