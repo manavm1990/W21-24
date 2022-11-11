@@ -16,7 +16,7 @@
   }
 
   main {
-    @apply px-8 pt-6;
+    @apply mx-auto w-4/5 px-8 pt-6;
   }
 
   form,
