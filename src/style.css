@@ -36,7 +36,8 @@
 }
 
 @layer components {
-  .button {
+  .button,
+  #results a {
     @apply inline-block w-full rounded bg-neutral-400 px-4 py-2 text-xl text-emerald-200;
   }
 }
