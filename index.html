@@ -25,8 +25,10 @@
       </h2>
     </header>
 
-    <main class="grid min-h-screen grid-cols-3 grid-rows-2 gap-y-6 gap-x-12">
-      <form class="col-span-1">
+    <main
+      class="flex min-h-screen flex-col gap-y-6 sm:grid sm:grid-cols-3 sm:grid-rows-2 sm:gap-x-6 lg:gap-x-12"
+    >
+      <form class="sm:col-span-1">
         <legend>Search by User</legend>
 
         <div>
@@ -44,7 +46,7 @@
         </div>
       </form>
 
-      <section class="order-last col-span-1">
+      <section class="sm:order-last sm:col-span-1">
         <h2>Search by Topic</h2>
         <div class="flex flex-col gap-y-3 p-4">
           <button type="button">JavaScript</button
@@ -52,7 +54,7 @@
         </div>
       </section>
 
-      <section class="col-span-2 flex flex-col gap-y-4" id="results">
+      <section class="flex flex-col gap-y-4 sm:col-span-2" id="results">
         <h2>Showing Repositories for: <span id="repo-search-term"></span></h2>
         <ul class="px-2">
           <!-- <li><a href="./single-repo.html?repo=manavm1990/6-27">manavm1990/6-27</a></li> -->
