@@ -8,7 +8,7 @@
   }
 
   header {
-    @apply bg-orange-900 pt-16 pb-32 pl-16;
+    @apply bg-orange-900 p-4 sm:pt-8 sm:pb-16 sm:pl-8;
   }
 
   h1 {
