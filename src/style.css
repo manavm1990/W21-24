@@ -37,7 +37,12 @@
 
 @layer components {
   .button,
-  #results a {
+  #results a,
+  #issues a {
     @apply inline-block w-full rounded bg-neutral-400 px-4 py-2 text-xl text-emerald-200;
+  }
+
+  #limit-warning a {
+    @apply text-blue-400 underline;
   }
 }
