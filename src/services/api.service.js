@@ -16,8 +16,8 @@ export default {
     return response.json();
   },
 
-  async getReposByUsername(username) {
-    const response = await fetch(`${BASE_URL}/users/${username}/repos`);
+  async getReposByUsername(ghUser) {
+    const response = await fetch(`${BASE_URL}/users/${ghUser}/repos`);
 
     // This Promise will need to be awaited by the caller.
     return response.json();
