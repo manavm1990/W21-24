@@ -6,3 +6,9 @@
 document.querySelectorAll("button").forEach((button) => {
   button.classList.add("button");
 });
+
+document.querySelector("form").addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const username = event.target.username.value;
+});
