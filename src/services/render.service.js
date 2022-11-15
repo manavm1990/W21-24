@@ -9,3 +9,25 @@
  * - full_name
  * 4. Use JS to set CSS 'visibility' property to 'visible'
  */
+const resultsH2Span = document.querySelector("#repo-search-term");
+const resultsList = document.querySelector("#results ul");
+
+function renderRepo(repo) {
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+
+  a.href = `./single-repo.html?repo=${repo.full_name}`;
+  a.innerText = repo.full_name;
+
+  li.appendChild(a);
+
+  resultsList.appendChild(li);
+}
+
+export default {
+  renderRepos(username, repos) {
+    resultsH2Span.innerText = username;
+
+    repos.forEach(renderRepo);
+  },
+};

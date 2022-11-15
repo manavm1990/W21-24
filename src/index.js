@@ -4,6 +4,7 @@
  */
 
 import apiService from "./services/api.service";
+import renderService from "./services/render.service";
 
 document.querySelectorAll("button").forEach((button) => {
   button.classList.add("button");
@@ -16,7 +17,7 @@ document.querySelector("form").addEventListener("submit", async (event) => {
 
   const data = await apiService.getReposByUsername(username);
 
-  console.log(data);
+  renderService.renderRepos(username, data);
 });
 
 document.getElementById("topics").addEventListener("click", async (event) => {
