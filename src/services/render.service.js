@@ -25,8 +25,8 @@ function renderRepo(repo) {
 }
 
 export default {
-  renderRepos(username, repos) {
-    resultsH2Span.innerText = username;
+  renderRepos(heading, repos) {
+    resultsH2Span.innerText = heading;
 
     repos.forEach(renderRepo);
   },
