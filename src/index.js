@@ -26,6 +26,10 @@ document.getElementById("topics").addEventListener("click", async (event) => {
   // Let's make sure we only listen to the buttons.
   if (event.target.tagName === "BUTTON") {
     const topic = event.target.innerText.toLowerCase();
+
+    // GitHub API will send an 'items' array with the repos.
     const data = await apiService.getReposByTopic(topic);
+
+    renderService.renderRepos(topic, data.items);
   }
 });
